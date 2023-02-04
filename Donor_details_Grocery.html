@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Donations.css">
+</head>
+<body>
+    <h2 class="head" >Donor Details</h2><br><br>
+<form class="form-horizontal" action="grocery.php" method="post">
+
+      <label for="fname" class="Form">First Name</label><br>
+      <input type="text" placeholder="Enter your first name" name="fname" id="fname" required><br>
+    </div>
+    </div>
+
+      <label for="lname" class="control-label col-sm-4">Last Name</label><br>
+      <input type="text" placeholder="Enter your Last name" name="lname" id="fname" required><br>
+   
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+      <label  for="email" class="control-label col-sm-4">Email ID</label><br>
+      <input type="email" placeholder="Enter your Email id" name="email" id="email" required><br>
+   
+      </div>
+    </div>
+
+ 
+      <label for="num" class="control-label col-sm-4">Mobile</label><br>
+      <input type="number" placeholder="740xxxxxx80" name="mobile" id="num" required><br>
+   
+      </div>
+    </div>
+  </div>
+
+      <label for="add" class="control-label col-sm-2">Address</label><br>
+   
+        <textarea type="text" class="form-control" rows="2" name="address"></textarea><br>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-6">
+    
+      <label class="col-sm-4 control-label">State</label><br>
+        <input type="text" class="date-start ml-5 form-control datepicker" placeholder="Gujarat" name="state"><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label class="col-sm-4 control-label">Zip Code</label><br>
+      <div class="col-sm-8">
+        <input type="text" class="date-end ml-5 form-control datepicker col-sm-8" placeholder="3800xx" name="zipcode">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+  
+      <label class="col-sm-4 control-label">Type of Grocery</label><br>
+      
+        <input type="text" class="form-control" name="typeofgrocery"><br>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label class="col-sm-4 control-label">Quantity</label><br>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" name="quantity"><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label class="col-sm-4 control-label">NGO</label><br>
+    <div class="col-sm-8">
+        <input type="text" class="form-control" name="ngo"><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <input class="confirmBtn" id="btn-submit" type="submit" name="submit" value="Confirm Donation">
+  </div>
+  <input type="hidden" name="action" id="action" value="event_dialog_add_newpartnerdata" />
+</form>
+</body>
+<style>
+    Form {
+        color: #720089;
+        margin-left: 50;
+        flex: auto;
+
+    }
+    head{
+        color:#720089;
+     
+        margin-bottom: 50;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-repeat: no-repeat;
+      background-color: white;
+      background-size: 100%;
+      position: relative;
+      }
+      * {
+      box-sizing: border-box;
+      }
+</style>
+
+</html>

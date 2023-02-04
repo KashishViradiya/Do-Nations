@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-repeat: no-repeat;
+      background-color: white;
+      background-size: 100%;
+      position: relative;
+      }
+      * {
+      box-sizing: border-box;
+      }
+      .image{
+      /* display: block; */
+      width: 30%;
+      margin-top: 5000;
+      margin-bottom: -4000;
+      margin: 0 auto;
+      position: fixed;
+      z-index: -10;
+      left: 35%;
+      opacity: .1;
+    }
+     
+      h1 {
+      color: #7200E4;
+      font-size: xx-large
+      }
+    input[type=email],
+    input[type=password],
+    input[type=name] {
+      width: 50%;
+      padding: 15px;
+      border-radius: 25px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      background: transparent;
+    }
+    input[type=email]:focus,
+    input[type=password]:focus,
+    input[type=name]:focus {
+      background-color: #ddd;
+      outline: none;
+      
+    }
+    input:focus::placeholder{
+      color: transparent;
+    }
+    .login3{
+      /* background-color: white; */
+       color:#7200E4;
+
+      padding: 16px 20px;
+      margin: 0px 560px;
+       border: none; 
+      cursor: pointer;
+      width: 10%;
+      opacity: 0.9;
+      margin-left: 750px;
+    }
+    .kash{
+      color:#7200E4;
+    }
+    
+  </style>
+</head>
+
+<body>
+       <div>
+     
+      <br><br>
+      <h1 align="center"><b>Sign Up</b></h1> </div>
+      <p align="center" style="font-size:larger"><b>Enter your Email id to Sign Up</b> </p>
+      <hr><br>
+      <form align="center" action="signup.php" method="post">
+        <label for="name" ><h4>Name</h4></label><br>
+        <input type="name" placeholder="Enter your Name" name="name" id="name" required><br>
+      
+      <label for="email" ><h4>Email</h4></label><br>
+      <input type="email" placeholder="Enter your Email id" name="email" id="email" required><br>
+    
+      <label for="psw"><h4>Password</h4></label><br>
+      <input type="password" placeholder="Enter Password" name="password" id="psw" required><br>
+
+      <input type="checkbox" checked="checked" name="remember" style=" margin-bottom: 15px"> Remember me
+</label>
+<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a><p>
+<div>
+<input type="submit" class="cancel" name="cancel" value="Cancel">
+<input type="submit" class="signup" name="signup" value="Signup">
+      </div>
+      
+</body>
+<script>
+  function validateEmail(email){
+        let emailpattern = /\S+@\S+\.\S+/;
+        if(!emailpattern.test(String(email).toLowerCase())){
+          alert("Enter Correct Email id")
+        }
+      }
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click",()=>{
+        const email = document.getElementById("email");
+        validateEmail(email.value);
+
+      })
+      </script>
+</html>

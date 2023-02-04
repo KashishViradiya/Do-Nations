@@ -1,0 +1,288 @@
+@font-face {
+    font-family: "Grotesque";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.ttf"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.woff");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Grotesque Black";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.ttf"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.woff");
+    font-weight: bold;
+  }
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif; margin:0
+}
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+}
+.navbar-nav{
+    margin-top: -20px;
+}
+
+.cid-tuqp5AT0Y5 .nav-dropdown .link.dropdown-toggle::after {
+    margin-left: 20px !important;
+    margin-top: 37px !important;
+}
+
+.btn-primary, .btn-primary:active{
+    margin-top: 20px !important;
+    color: white !important;
+    background: #7200E4 !important;
+    border: 1px solid #7200E4 !important;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%) !important;
+}
+
+.slideshow-container {
+width: 600px;
+position: relative;
+margin: auto;
+margin-left: 100px;
+}
+
+.cid-tuqp5AT0Y5 .navbar .dropdown-menu .dropdown-item:hover{
+    background: #7200E4 !important;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: #7200E4;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+background-color: #7200E4;
+color: #fff;
+}
+
+
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+.random{
+    width: 100px;
+    text-align: center;
+    margin-left: 350px;
+}
+
+.dot {
+height: 15px;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #7200e44c;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #7200E4;
+}
+
+.fade {
+animation-name: fade;
+animation-duration: 2s;
+}
+
+.topRated .ngoName{
+    margin-top: -250px;
+    margin-right: 170px;
+    margin-left: -250px;
+    width:auto;
+    font-size: 30px;
+    font-weight: 800;
+}
+article.card {
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    left: 80%;
+    width: 350px;
+    height: 350px;
+    -webkit-transform: translate(-50%, -50%) translateZ(0);
+            transform: translate(-50%, -50%) translateZ(0);
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+  article.card .thumb {
+    width: auto;
+    height: 260px;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png") no-repeat center;
+    background-size: cover;
+    border-radius: 3px;
+  }
+  article.card .infos {
+    width: auto;
+    height: 350px;
+    position: relative;
+    padding: 14px 24px;
+    background: #fff;
+    -webkit-transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+    transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  }
+  article.card .infos .title {
+    position: relative;
+    margin: 10px 0;
+    letter-spacing: 3px;
+    color: #152536;
+    font-family: "Grotesque Black", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 0px #32577f;
+  }
+  article.card .infos .flag {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    /* -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); */
+    width: 35px;
+    height: 23px;
+    background-size: 100% auto;
+    display: inline-block;
+  }
+
+  .topRated .cards .card .infos .seats span{
+    font-weight: 800 !important;
+    color: #7200E4;
+  }
+  article.card .infos .date, article.card .infos .seats {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: .85rem;
+    color: rgba(21, 37, 54, 0.7);
+    font-family: "Grotesque", sans-serif;
+  }
+  article.card .infos .seats {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    -webkit-transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  }
+  article.card .infos .txt {
+    font-family: "Merriweather", sans-serif;
+    line-height: 2;
+    font-size: .95rem;
+    color: rgba(21, 37, 54, 0.7);
+    opacity: 0;
+    -webkit-transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  }
+  article.card .infos .details {
+    position: absolute;
+    left: 0;
+    left: 0;
+    bottom: 0;
+    margin: 10px 0;
+    padding: 20px 24px;
+    letter-spacing: 1px;
+    color: #4e958b;
+    font-family: "Grotesque Black", sans-serif;
+    font-size: .9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  }
+  /* article.card:hover .infos {
+     -webkit-transform: translateY(-260px);
+            transform: translateY(-260px); 
+  } */
+  article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:hover .infos .details {
+    opacity: 1;
+  }
+
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+
+.g{
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+.majorTitle{
+    font-size: 50px;
+    font-weight: 800;
+    color: #7200E4;
+}
+
+.contriPara{
+    margin-top: 50px;
+    line-height: 2;
+    text-align: center;
+}
+
+.buttonsClass{
+    text-align: center;
+    margin-top: 30px;
+}
+.quickAction{
+    /* margin-right: 100px; */
+    padding: 12px 30px;
+    border: #7200E4 2px solid;
+    box-shadow: #bbb 0px 2px 5px;
+    color: #7200E4;
+    font-weight: 600;
+}
+
+.quickAction .voluteer{
+    /* margin-right: 100px; */
+    padding: 12px 30px;
+    border: #7200E4 2px solid;
+    box-shadow: #bbb 0px 2px 5px;
+    color: #7200E4;
+    font-weight: 600;
+}
+
